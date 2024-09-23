@@ -21,6 +21,7 @@ const getallappointments = async (req, res) => {
 
 const bookappointment = async (req, res) => {
   try {
+    console.log("Received appointment request:", req.body);
     const appointment = await Appointment({
       date: req.body.date,
       time: req.body.time,
@@ -47,8 +48,8 @@ const bookappointment = async (req, res) => {
     const result = await appointment.save();
     return res.status(201).send(result);
   } catch (error) {
-    console.log("error", error);
-    res.status(500).send("Unable to book appointment");
+    console.error("Error in bookappointment:", error);
+    res.status(500).send("Unable to book appointment: " + error.message);
   }
 };
 

@@ -31,20 +31,21 @@ th {
   text-align: center;
   font-weight: 700;
   padding: 0.3rem 1rem;
-  background-color: rgb(219, 223, 246);
+  background-color: #3A6D8C;
   color: var(--bold-text-color);
 }
 
 tr {
   padding-bottom: 10px;
+  
 }
 
 tr:nth-child(2n + 1) {
-  background-color: rgb(234, 234, 234);
+  background-color: #074173;
 }
 
 tr:nth-child(2n + 2) {
-  background-color: rgb(226, 237, 255);
+  background-color: #074173;
 }
 
 td {
