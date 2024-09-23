@@ -1,6 +1,9 @@
 @import url(app.css);
 
 .contact-container {
+  background-color: #ECFFE6;
+  padding: 1.8rem;
+  border-radius: 1rem;
   flex-direction: column;
   gap: 2rem;
   width: 40%;

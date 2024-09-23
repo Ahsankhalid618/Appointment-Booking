@@ -29,7 +29,7 @@
 .circle-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--light-text-color);
+  color: var(--darker-blue);
 }
 
 @media screen and (max-width: 1000px) {

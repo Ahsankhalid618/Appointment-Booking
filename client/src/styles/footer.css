@@ -1,38 +1,66 @@
 @import url(app.css);
 
 footer {
-  background-color: var(--light-text-color);
-}
-
-.footer {
-  display: flex;
-  width: 50%;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 100%;
-  margin: auto;
+  background-color: #134B70;
   padding: 2rem 0;
+  color: var(--light-blue);
 }
 
-.footer h3 {
-  color: var(--light-blue);
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
 }
 
-.footer a {
-  color: var(--light-blue);
+.footer-links h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .footer-links ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--light-blue);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--dark-blue);
+}
+
+.social {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.social h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .social ul {
   display: flex;
   gap: 1rem;
+  padding: 0;
+  list-style: none;
 }
 
 .social li {
@@ -42,16 +70,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s;
+}
+
+.social li:hover {
+  transform: scale(1.1);
 }
 
 .social a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social svg {
-  font-size: 1.3rem;
+  color: var(--light-blue);
+  font-size: 1.5rem;
 }
 
 .facebook {
@@ -59,34 +87,39 @@ footer {
 }
 
 .instagram {
-  background: linear-gradient(
-    180deg,
-    rgba(64, 93, 230, 1) 0%,
-    rgba(131, 58, 180, 1) 25%,
-    rgba(225, 48, 108, 1) 50%,
-    rgba(245, 96, 64, 1) 75%,
-    rgba(252, 175, 69, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(64, 93, 230, 1) 0%, rgba(131, 58, 180, 1) 25%, rgba(225, 48, 108, 1) 50%, rgba(245, 96, 64, 1) 75%, rgba(252, 175, 69, 1) 100%);
 }
 
 .youtube {
   background-color: #ff0000;
 }
 
+.twitter {
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
 .footer-bottom {
   text-align: center;
   background-color: var(--bold-text-color);
   color: var(--light-blue);
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }
 
-.footer-bottom a {
-  color: var(--dark-blue);
+.footer-bottom p {
+  margin: 0;
 }
 
-@media screen and (max-width: 550px) {
-  .social ul {
+@media screen and (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .social ul {
+    justify-content: center;
   }
 }

@@ -13,6 +13,7 @@
 
 .form-heading {
   font-size: 2rem;
+  color: var(--darker-blue);
 }
 
 .register-form {
@@ -26,7 +27,7 @@
 textarea,
 select {
   font-size: 1rem;
-  background-color: rgb(234, 234, 234);
+  background-color: #EEEDEB;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 5px;
