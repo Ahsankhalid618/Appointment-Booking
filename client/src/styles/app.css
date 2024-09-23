@@ -5,6 +5,7 @@
   --dark-blue: #00abe4;
   --darker-blue: #0077ff;
   --white: #FFF8F3;
+  --text: linear-gradient( to right, #50D9DB, #007299 );
   --bold-text-color: #FCF8F3;
   --light-text-color: #FFF8F3;
   --font-family: "Poppins", sans-serif;
@@ -22,8 +23,8 @@ html {
 
 body {
   font-family: var(--font-family);
-  background: linear-gradient( to right, #50D9DB, #007299 );
-  color: white;
+  background-color: #172048;
+  
 }
 
 li {
@@ -40,7 +41,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--white);
+  background: linear-gradient( to right, #50D9DB, #007299 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .page-heading {
@@ -50,7 +53,7 @@ h6 {
 }
 
 p {
-  color: var(--light-text-color);
+  color: #C4C4C4;
 }
 
 .flex-center {
@@ -71,7 +74,8 @@ p {
 
 .btn {
   color: var(--white);
-  background-color: var(--dark-blue);
+  background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+  box-shadow: 0px 10px 15px 0px #01739933;
   font-size: 1rem;
   padding: 0.6rem 0.8rem;
   border: none;

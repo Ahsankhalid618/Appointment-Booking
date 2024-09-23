@@ -8,12 +8,10 @@ const Hero = () => {
       <div className="hero-content">
         <h1>
           Your Health, <br />
-          Our Responsibility
+          Your Way!
         </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          tenetur doloremque molestias repellat minus asperiores in aperiam
-          dolor, quaerat praesentium.
+        Start your journey towards optimal health with our comprehensive services designed to empower you. From personalized wellness plans to innovative treatments, we're here to help you unlock your best self. Don't wait—transform your health today!
         </p>
       </div>
       <div className="hero-img">

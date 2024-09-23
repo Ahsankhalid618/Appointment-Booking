@@ -12,24 +12,26 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  background-color: var(--white);
+  background-color: #172048;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   align-items: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 0 rgb(250, 248, 248);
 }
 
 .counter {
   font-size: 3rem;
   font-weight: 600;
-  color: var(--darker-blue);
+  background: linear-gradient( to right, #50D9DB, #007299 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .circle-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--darker-blue);
+  color: var(--white);
 }
 
 @media screen and (max-width: 1000px) {

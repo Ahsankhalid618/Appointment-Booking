@@ -1,8 +1,9 @@
 @import url(app.css);
 
 footer {
-  background-color: #134B70;
-  padding: 2rem 0;
+
+  padding: 6rem 0 0 0;
+  /* margin: 6rem 0; */
   color: var(--light-blue);
 }
 
