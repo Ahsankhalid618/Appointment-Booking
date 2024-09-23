@@ -49,13 +49,20 @@ function Register() {
   const formSubmit = async (e) => {
     try {
       e.preventDefault();
+      console.log("Form submitted");
 
-      if (loading) return;
-      if (file === "") return;
+      if (loading) {
+        console.log("Loading, cannot submit");
+        return;
+      }
+      if (file === "") {
+        console.log("No file uploaded");
+        return;
+      }
 
-      const { firstname, lastname, email, password, confpassword } =
-        formDetails;
+      const { firstname, lastname, email, password, confpassword } = formDetails;
       if (!firstname || !lastname || !email || !password || !confpassword) {
+        console.log("Missing fields");
         return toast.error("Input field should not be empty");
       } else if (firstname.length < 3) {
         return toast.error("First name must be at least 3 characters long");
@@ -67,7 +74,8 @@ function Register() {
         return toast.error("Passwords do not match");
       }
 
-      await toast.promise(
+      console.log("Sending registration request");
+      const response = await toast.promise(
         axios.post("/user/register", {
           firstname,
           lastname,
@@ -82,8 +90,12 @@ function Register() {
           loading: "Registering user...",
         }
       );
+      console.log("Registration response:", response);
       return navigate("/login");
-    } catch (error) {}
+    } catch (error) {
+      console.error("Registration error:", error);
+      toast.error("Registration failed: " + error.message);
+    }
   };
 
   return (
