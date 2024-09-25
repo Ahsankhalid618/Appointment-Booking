@@ -16,9 +16,9 @@ A MERN stack project for booking medical appointments, featuring an Admin Dashbo
 
 ## About The Project
 
-![Project Screenshot](https://i.ibb.co/mB49m89/Screenshot-2024-09-24-014000.png)
+![Project Screenshot](https://i.postimg.cc/Jn3fzxYF/Screenshot-2024-09-24-014000.png)
 
-Appointment Booking with Doctors is a web application designed to facilitate the scheduling of medical appointments. It enables users to easily find and book appointments with healthcare professionals based on their specialties and availability. The platform features an intuitive user interface, allowing for quick sign-up, secure login, and efficient appointment management. Additionally, an Admin Dashboard provides administrators with the tools to manage doctor profiles and oversee appointment scheduling, ensuring a smooth experience for both patients and providers. Built on the MERN stack, this application combines the power of MongoDB, Express.js, React, and Node.js to deliver a robust and scalable solution for healthcare appointment management.
+Appointment Booking with Doctors is a web application designed to facilitate the scheduling of medical appointments. It enables users to easily find appointments with healthcare professionals based on their specialties and availability. The platform features an intuitive user interface, allowing for quick sign-up, secure login, and efficient appointment management. Additionally, an Admin Dashboard provides administrators with the tools to manage doctor profiles and oversee appointment scheduling, ensuring a smooth patient and provider experience. Built on the MERN stack, this application combines the power of MongoDB, Express.js, React, and Node.js to deliver a robust and scalable solution for healthcare appointment management.
 ### Built With
 
 This project utilizes the powers of the MERN stack along with redux and Axios to build the Appoint booker.
