@@ -106,6 +106,8 @@ dist
 /client/node_modules
 /client/.env
 /client/.vscode
-branch_structure.json
-temp_auto_push.bat
-temp_interactive_push.bat
+
+.env.local
+.env.*.local
+.env.production
+.env.development
